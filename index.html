@@ -8,53 +8,72 @@
     <title>Home</title>
 </head>
 <body>
-    <header class="navbar bg-body-tertiary">
+    <header class="navbar navbar-expand-sm" id="nav-header">
         <div class="container-fluid">
             <a class="navbar-brand" href="/index.html">
                 <img src="/images/logo_design_marita.svg" alt="Marita Aziga's Logo" class="logo">
             </a>
-        </div>
-        <div class="container-fluid">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-2 mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/pages/about.html">About</a>
                 </li>
-                <li>Works</li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Projects
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/pages/art.html">Design</a></li>
+                        <li><a class="dropdown-item" href="/pages/frontend.html">Front-End</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary" aria-current="page" href="/pages/contact.html" role="button">Contact</a>
+                </li>                
             </ul>
         </div>
     </header>
     <section>
-        <div>
-            <div>
+        <div class="container-fluid">
+            <div class="container-fluid">
                 <h3>Welcome to my site! My name is</h3>
                 <h1 className="title">Marita Aziga</h1>
-                <h2>Graphic Designer | Front-End Developer | Illustrator</h2>
             </div>
-            <div className="statement">
-                <p>
-                    Chill dev with a background in Graphic Design and Illustration. 
-                    I development clean, snazzy applications for web and mobile with a flair for style.  
-                </p>
+            <div id="statement" class="container-fluid">
+                <p>I'm a front-end developer with a background in graphic design. I am dedicated to building responsive web applications, while making them look stylish.</p>
                 <p>If you'd like to learn more,</p>
-                <Link to="/about">
-                    <button className="clickMe" >Click Here!</button>
-                </Link>
+                <a class="btn btn-primary" href="/pages/about.html" role="button">Click Here!</a>
             </div>
         </div>
     </section>
-    <footer>
-        <div>
-            <h2>Marita Aziga</h2>
+    <section class="container-fluid">
+        <div class="container-fluid">
+                <h1>Recent Projects Section will be coming soon.</h1>
         </div>
-        <div>
-            <ul>
-                <li><a href="/pages/about.html">About</a></li>
-                <li><a href="/pages/works.html">Work</a></li>
-                <li><a href="/pages/contact.html">Contact</a></li>
+    </section>
+    <footer class="bg-body-tertiary">
+        <div class="container-fluid">
+            <h2>Marita Aziga</h2>
+            <ul class="navbar-nav mb-2 mb-lg-0" id="footer-nav">
+                <li class="nav-item" aria-current="page" href="/index.html">Home</li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/pages/about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Projects
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/pages/art.html">Design</a></li>
+                        <li><a class="dropdown-item" href="/pages/frontend.html">Front-End</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/pages/contact.html">Contact</a>
+                </li>                
             </ul>
         </div>
-        <div className='copyright'>
-            <p>© 2025 Marita Aziga</p>
+        <div id='copyright'>
+            <p>© 2026 Marita Aziga - All rights reserved.</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
