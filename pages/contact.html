@@ -34,8 +34,27 @@
     </header>
    <main class="flex-grow-1">
         <div class="container p-lg-5">
+            <h1 className="heading">Want to get in touch?</h1>
+            <h4>Leave a message or check out my social media. I'll get back to you soon.</h4>
         </div>
         <div class="container p-lg-5">
+            <form action="post">
+                <div class="mb-3">
+                    <label for="#name">Name</label>
+                    <input type="text" class="form-control" name="Name" id="name" required/>   
+                </div>
+                <div class="mb-3">
+                    <label for="#email">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" required/>
+                </div>
+                <div class="mb-3">
+                    <label for="message">Message</label>
+                    <textarea name="message" class="form-control" id="message" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Submit</button> 
+                </div>
+            </form>
         </div>
    </main>
     <footer class="container-fluid py-2" id="footer">
