@@ -1,64 +1,22 @@
-/**const submitBtn = document.getElementById('sendEmail');
+const contactMe = document.getElementById("contactme");
 
-submitBtn.addEventListener('click', async () => {
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
+/**
+ * Sends an email to me via the contact form. Although not ideal, uses mailto to send it.
+ */
+contactMe.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-    const response = await fetch('http://localhost:3000/send-email', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            name,
-            email,
-            subject,
-            message,
-        }),
-    });
+  const name = document.getElementById("name");
+  const email = document.getElementById("email");
+  const message = document.getElementById("message");
 
-    const data = await response.json();
+  const subject = encodeURIComponent(`A message from ${name.innerHTML}`);
 
-    console.log(data);
-    alert('Email sent!');
-}); */
+  const body = encodeURIComponent(
+    `${message.innerHTML}\n\n` +
+      `Regards,\n${name.innerHTML}\n${email.innerHTML}`,
+  );
 
-
-
-const submit = document.getElementById('sendEmail');
-
-
-const sendEmail = (name, email, subject, message) => {
-    const headers = new Headers();
-    headers.append("Content-Type", "application/json");
-    headers.set('Authorization', 'Basic' + btoa(process.env.API_KEY+":"+process.env.SECRET_KEY));
-
-    const data = JSON.stringify({
-            "Messages": [{
-                "From": [{"Email": email, "Name": name}],
-                "To": {"Email": process.env.EMAIL, "Name": "Marita Aziga"},
-                "Subject": subject,
-                "TextPart": message
-            }]
-        });
-        const requestOptions = {
-            method: 'POST',
-            headers: headers,
-            body: data,
-        }
-
-        fetch('https://api.mailjet.com/v3.1/send', requestOptions)
-        .then(response => response.text()).then(result => alert(result))
-        .catch(error => alert(error));
-    }
-
-submit.addEventListener('click', () => {
-    const name = document.getElementById('name');
-    const email = document.getElementById('email');
-    const subject = document.getElementById('subject');
-    const message = document.getElementById('message');
-
-    sendEmail(name.innerText, email.innerText, subject.innerText, message.innerText);
+  window.location.href =
+    `mailto:azigamarita@gmail.com` + `?subject=${subject}&body=${body}`;
 });
