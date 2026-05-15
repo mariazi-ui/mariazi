@@ -1,3 +1,8 @@
+/**
+ * This server is only used to allow visitors to send an email through the contact form.
+ * This is done using the mailjet api.
+ */
+
 require('dotenv').config();
 
 const express = require('express');
