@@ -1,9 +1,35 @@
+/**const submitBtn = document.getElementById('sendEmail');
+
+submitBtn.addEventListener('click', async () => {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+
+    const response = await fetch('http://localhost:3000/send-email', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            name,
+            email,
+            subject,
+            message,
+        }),
+    });
+
+    const data = await response.json();
+
+    console.log(data);
+    alert('Email sent!');
+}); */
+
+
+
 const submit = document.getElementById('sendEmail');
 
-/**
- * A function that sends a email so new visitors can get in touch. 
- * This is done using axios to get a response.
- */
+
 const sendEmail = (name, email, subject, message) => {
     const headers = new Headers();
     headers.append("Content-Type", "application/json");
