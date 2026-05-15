@@ -28,7 +28,7 @@ const sendEmail = (name, email, subject, message) => {
         .catch(error => alert(error));
     }
 
-sendEmail.addEventListener('click', () => {
+submit.addEventListener('click', () => {
     const name = document.getElementById('name');
     const email = document.getElementById('email');
     const subject = document.getElementById('subject');
