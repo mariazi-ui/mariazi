@@ -38,7 +38,7 @@
             <h4>Leave a message or check out my social media. I'll get back to you soon.</h4>
         </div>
         <div class="container p-lg-5">
-            <form action="post">
+            <form id="contactMe">
                 <div class="mb-3">
                     <label for="#name">Name</label>
                     <input type="text" class="form-control" name="Name" id="name" required/>   
@@ -48,15 +48,11 @@
                     <input type="email" class="form-control" name="email" id="email" required/>
                 </div>
                 <div class="mb-3">
-                    <label for="#name">Subject</label>
-                    <input type="text" class="form-control" name="Subject" id="subject" required/>   
-                </div>
-                <div class="mb-3">
                     <label for="message">Message</label>
                     <textarea name="message" class="form-control" id="message" required></textarea>
                 </div>
                 <div class="mb-3">
-                    <button type="submit" class="btn btn-primary" id="sendEmail">Submit</button> 
+                    <button type="submit" class="btn btn-primary">Submit</button> 
                 </div>
             </form>
         </div>

@@ -1,4 +1,4 @@
-const contactMe = document.getElementById("contactme");
+const contactMe = document.getElementById("contactMe");
 
 /**
  * Sends an email to me via the contact form. Although not ideal, uses mailto to send it.
