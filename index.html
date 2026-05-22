@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <title>Home</title>
 </head>
-<body class="d-flex flex-column min-vh-100">
-    <header class="navbar navbar-expand-sm sticky-top" id="nav-header">
+<body class="d-flex flex-column min-vh-100 p-lg-3">
+    <header class="navbar navbar-expand-sm sticky-top py-2 px-3" id="nav-header">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="logo_design_marita.svg" alt="Marita Aziga's Logo" class="logo">
@@ -32,113 +32,106 @@
     <!-- Site Sections -->
    <main class="flex-grow-1">
         <!-- Welcome -->
-        <section>
-            <div class="container p-lg-5">
-            <h3>Welcome to my site! My name is</h3>
-            <h1>Marita Aziga</h1>
-            <p>I'm a front-end developer with a background in graphic design. I am dedicated to building responsive web applications, while making them look stylish.</p>
-            <p>If you'd like to learn more,</p>
-            <a class="btn btn-primary" role="button" href="#about">Click Here!</a>
-        </div>
+        <section class="container p-lg-5">
+            <div class="container py-5">
+                <h3>Welcome to my site! My name is</h3>
+                <h1>Marita Aziga</h1>
+                <p>I'm a front-end developer with a background in graphic design. I am dedicated to building responsive web applications, while making them look stylish.</p>
+                <p>If you'd like to learn more,</p>
+                <a class="btn btn-primary" role="button" href="#about">Click Here!</a>
+            </div>
         </section>
         <!-- About Me-->
-        <section id="about">
-            <div class="container p-lg-5">
-            <h1 class="pb-3">About Me!</h1>
-            <p>
-                Hi! I’m a recent grad from Mohawk College’s Software Support program, where I learned how to build apps that work well and look good too. 
-                My front-end journey actually started in Mohawk’s Graphic Design program through the UX/UI stream, playing around with HTML and CSS. Now, I mix what I’ve learned from 
-                both programs to make websites that are not just functional but also fun.
-            </p>
-            <p>
-                I’m a pretty laid back creator who loves putting a bit of personality into every site I make. Thanks to my background in the arts and my web development know-how, 
-                I get to solve problems creatively and enjoy the process along the way. I am eager to leverage technical proficiency and artistic talent in a dynamic design-focused role.
-            </p>
-        </div>
-        <div class="container p-lg-5">
-            <div>
-                <h2>My Education</h2>
-                <div class="container pt-3 pb-5">
-                    <h5>Computer System Technician - Software Support</h5>
-                    <h6>School of Engineering Technology, Mohawk College | Sept 2022 - Dec 2025</h6>
-                    <ul>
-                        <li>HTML & CSS</li>
-                        <li>Client Side Web Programming</li>
-                        <li>Database Theory</li>
-                        <li>Software Quality & Testing</li>
-                        <li>Data Structures & Algorithms</li>
-                        <li>Software Dev Tools & Practices</li>
-                        <li>Mobile Web Programming</li>
-                    </ul>
-                    <h5>Graphic Design</h5>
-                    <h6>School of Creative Industries, Mohawk College | Sept 2019 - Dec 2021</h6>
-                    <ul>
-                        <li>Web Design</li>
-                        <li>User Interface</li>
-                        <li>Typography</li>
-                        <li>Image Editing Fundamentals</li>
-                        <li>Digital Photography</li>
-                        <li>Vector Design Foundations</li>
-                        <li>Design and Production</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container p-lg-5">
-            <h2>My Skills</h2>
-            <div class="container pt-3 pb-3">
-                <h3 class="pb-2">Hard Skills</h3>
-                <h5>Design</h5>
-                <ul>
-                    <li>Adobe Photoshop, Adobe Illustrator & Adobe InDesign</li>
-                    <li>Affinity Studio</li>
-                    <li>Figma</li>
-                    <li>Branding and Visual Identity</li>
-                </ul>
-                <h5>Programming & Markup Languages</h5>
-                <ul>
-                    <li>HTML & CSS</li>
-                    <li>Javascript</li>
-                    <li>SQL & SQLite</li>
-                    <li>Java</li>
-                    <li>C#</li>
-                </ul>
-                <h5>Tools</h5>
-                <ul>
-                    <li>Git and GitHub</li>
-                    <li>Bash and Bash Scripting</li>
-                    <li>Selenium Testing</li>
-                </ul>
-                <h5>Libraries</h5>
-                <ul>
-                    <li>React.js & React Native</li>
-                    <li>Node.js</li>
-                    <li>Bootstrap</li>
-                </ul>
-            </div>
-            <div class="container pt-3">
-                <h3 class="pb-2">Soft Skills</h3>
+        <section id="about" class="container p-lg-5">
+            <div class="container py-5">
+                <h1 class="pb-3">About Me!</h1>
+                <p>
+                    Hi! I’m a recent graduate from Mohawk College’s Software Support program, where I learned how to build apps that work well and look good too. 
+                    My front-end journey actually started in Mohawk’s Graphic Design program through the UX/UI stream, playing around with HTML and CSS. Now, I mix what I’ve learned from 
+                    both programs to make websites that are not just functional but also fun.
+                </p>
+                <p>
+                    I’m a pretty laid back creator who loves putting a bit of personality into every site I make. Thanks to my background in the arts and my web development know-how, 
+                    I get to solve problems creatively and enjoy the process along the way. I am eager to leverage technical proficiency and artistic talent in a dynamic design-focused role.
+                </p>
                 <p>
                     When I'm not learning about web development or graphic design, I volunteer for the Hamilton Literacy Council as Literacy Tutor; helping adults learn how to read.
                     I enjoy taking short walks in nature and taking care of my house plants. I sometimes watch K-Dramas and C-Dramas with my family.
                     But my long time favorite hobby is painting. Whether it's with watercolors or digitally with Krita or Infinite Painter. 
                 </p>
             </div>
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-7">
+                        <h2>My Education</h2>
+                        <div>
+                            <h5>Computer System Technician - Software Support</h5>
+                            <h6>School of Engineering Technology, Mohawk College | Sept 2022 - Dec 2025</h6>
+                            <ul>
+                                <li>HTML & CSS</li>
+                                <li>Client Side Web Programming</li>
+                                <li>Database Theory</li>
+                                <li>Software Quality & Testing</li>
+                                <li>Data Structures & Algorithms</li>
+                                <li>Software Dev Tools & Practices</li>
+                                <li>Mobile Web Programming</li>
+                            </ul>
+                            <h5>Graphic Design</h5>
+                            <h6>School of Creative Industries, Mohawk College | Sept 2019 - Dec 2021</h6>
+                            <ul>
+                                <li>Web Design</li>
+                                <li>User Interface</li>
+                                <li>Typography</li>
+                                <li>Image Editing Fundamentals</li>
+                                <li>Digital Photography</li>
+                                <li>Vector Design Foundations</li>
+                                <li>Design and Production</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h2>My Skills</h2>
+                        <div class="container pt-3">
+                        <h3 class="pb-2">Hard Skills</h3>
+                        <h5>Design</h5>
+                        <ul>
+                            <li>Adobe CC (Photoshop, Illustrator, InDesign)</li>
+                            <li>Affinity Studio</li>
+                            <li>Figma</li>
+                            <li>Wordpress</li>
+                            <li>Branding and Visual Identity</li>
+                        </ul>
+                        <h5>Programming & Markup Languages</h5>
+                        <ul>
+                            <li>HTML & CSS</li>
+                            <li>Javascript</li>
+                            <li>SQL & SQLite</li>
+                            <li>Java</li>
+                            <li>C#</li>
+                        </ul>
+                        <h5>Tools</h5>
+                        <ul>
+                            <li>Git and GitHub</li>
+                            <li>Bash and Bash Scripting</li>
+                            <li>Selenium Testing</li>
+                        </ul>
+                        <h5>Libraries</h5>
+                        <ul>
+                            <li>React.js & React Native</li>
+                            <li>Node.js</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+            </div>
         </div>
         </section>
         <!-- Projects -->
-        <section id="projects">
-            <div class="container p-lg-5">
-                <h1 class="pb-3">What I've Worked On</h1>
-            </div>
-            <div class="container p-lg-5">
-            </div>
-            <div class="container p-lg-5">
-            </div>
+        <section id="projects" class="container p-lg-5">
+
         </section>
         <!-- Contact Me! -->
-        <section id="contact">
-            <div class="container p-lg-5">
+        <section id="contact" class="container p-lg-5">
+            <div class="container py-5">
                 <h1>Want to get in touch?</h1>
                 <p>Check out my social media or leave a message at azigamarita@gmail.com. I'll get back to you soon.</p>
                 <div class="list-group list-group-flush">
@@ -148,7 +141,7 @@
         </section>
    </main>
    <!-- Footer -->
-    <footer class="container-fluid py-2" id="footer">
+    <footer class="container-fluid py-2 px-4" id="footer">
         <div class="row g-0">
             <div class="col">
                 <h2>Marita Aziga</h2>
