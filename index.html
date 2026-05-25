@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <title>Home</title>
 </head>
-<body class="d-flex flex-column min-vh-100 p-lg-3">
-    <header class="navbar navbar-expand-sm sticky-top py-2 px-3" id="nav-header">
+<body class="d-flex flex-column min-vh-100 m-0">
+    <header class="navbar navbar-expand-sm sticky-top" id="nav-header">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="logo_design_marita.svg" alt="Marita Aziga's Logo" class="logo">
@@ -30,12 +30,12 @@
         </div>
     </header>
     <!-- Site Sections -->
-   <main class="flex-grow-1">
+    <main class="flex-grow-1">
         <!-- Welcome -->
-        <section class="container p-lg-5">
+        <section class="container-fluid p-lg-5" id="jumbotron">
             <div class="container py-5">
-                <h3>Welcome to my site! My name is</h3>
-                <h1>Marita Aziga</h1>
+                <h3 class="pb-1">Hi! My name is</h3>
+                <h1 id="title" class="pb-3">Marita Aziga</h1>
                 <p>I'm a front-end developer with a background in graphic design. I am dedicated to building responsive web applications, while making them look stylish.</p>
                 <p>If you'd like to learn more,</p>
                 <a class="btn btn-primary" role="button" href="#about">Click Here!</a>
@@ -63,7 +63,7 @@
             <div class="container py-5">
                 <div class="row">
                     <div class="col-7">
-                        <h2>My Education</h2>
+                        <h2 class="pb-3">My Education</h2>
                         <div>
                             <h5>Computer System Technician - Software Support</h5>
                             <h6>School of Engineering Technology, Mohawk College | Sept 2022 - Dec 2025</h6>
@@ -90,9 +90,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <h2>My Skills</h2>
-                        <div class="container pt-3">
-                        <h3 class="pb-2">Hard Skills</h3>
+                        <h2 class="pb-3">My Skills</h2>
                         <h5>Design</h5>
                         <ul>
                             <li>Adobe CC (Photoshop, Illustrator, InDesign)</li>
@@ -122,8 +120,7 @@
                             <li>Bootstrap</li>
                         </ul>
                     </div>
-            </div>
-        </div>
+                </div>
         </section>
         <!-- Projects -->
         <section id="projects" class="container p-lg-5">
@@ -149,7 +146,7 @@
         </section>
    </main>
    <!-- Footer -->
-    <footer class="container-fluid py-2 px-4" id="footer">
+    <footer class="container-fluid" id="footer">
         <div class="row g-0">
             <div class="col">
                 <h2>Marita Aziga</h2>
@@ -162,7 +159,7 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#about">About</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item">
                         <a class="nav-link active" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">

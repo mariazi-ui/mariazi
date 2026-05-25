@@ -1,5 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Niconne&display=swap');
+
 .logo {
     width: 30px;
     height: auto;
+    filter: invert(100%) sepia(41%) saturate(1277%) hue-rotate(175deg) brightness(104%) contrast(92%);
 }
+
+h1, h2, h3  {
+    font-family: "Laila", serif;
+    font-variant: small-caps;
+}
+
+h4, h5, h6 {
+    font-family: "Laila", serif;
+}
+
+#nav-header, #footer {
+    padding: 1.5rem 2rem;
+    background-color:  #081846 !important;
+    color:  #EFF5F6 !important;
+}
+
+.nav-link {
+    font-family: "Laila", serif;
+    color:  #EFF5F6 !important;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #EFF5F6 !important;
+    color: #081846 !important;
+}
+
+#jumbotron {
+      background-color:  #081846 !important;
+      width: 100%;
+      color:  #EFF5F6;
+}
+
+#title {
+    font-family: "Niconne", cursive;
+    font-size: 100px;
+    font-variant: unset;
+    letter-spacing: -4px;
+}
+
+
+
 
