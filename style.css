@@ -11,8 +11,8 @@ h1, h2, h3  {
     font-variant: small-caps;
 }
 
-h4, h5, h6 {
-    font-family: "Laila", serif;
+h4, h5, h6, .btn {
+    font-family: "Laila", serif !important;
 }
 
 #nav-header, #footer {
@@ -27,7 +27,7 @@ h4, h5, h6 {
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif !important;
     background-color: #EFF5F6 !important;
     color: #081846 !important;
 }
@@ -44,6 +44,8 @@ body {
     font-variant: unset;
     letter-spacing: -4px;
 }
+
+
 
 
 
