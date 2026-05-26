@@ -22,40 +22,30 @@ h6 {
 }
 
 .btn-primary {
-    font-family: "Montserrat", sans-serif !important;
     font-variant: small-caps !important;
     font-weight: bold;
     cursor: pointer;
-    background-color: #51b1d7 !important;
+    border: 1px solid #51B1D7 !important;
+    background-color: #2B4F8B !important;
+    border-radius: 18px !important;
 }
 
 .btn-secondary {
     font-variant: small-caps !important;
-    border: 1px solid #51b1d7 !important;
-    background-color: #eff5f6 !important;
-    color: #51b1d7 !important;
+    cursor: pointer;
+    border-radius: 18px !important;
 }
 
 .btn-primary:hover {
-    background-image: linear-gradient(
-        to right,
-        #eff5f6 0%,
-        #dbd4cc 50%,
-        #51b1d7 100%
-    );
+
 }
 .btn-secondary:hover {
-    background-image: linear-gradient(
-        to right,
-        #eff5f6 0%,
-        #dbd4cc 50%,
-        #51b1d7 100%
-    );
+    color: #eff5f6 !important;
 }
 
 #nav-header,
 #footer {
-    padding: 1.5rem 2rem;
+    padding: 1rem 1.5rem;
     background-color: #081846 !important;
     color: #eff5f6 !important;
 }
