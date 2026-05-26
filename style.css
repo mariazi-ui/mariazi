@@ -1,41 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Niconne&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Niconne&display=swap");
 
 .logo {
     width: 30px;
     height: auto;
-    filter: invert(100%) sepia(41%) saturate(1277%) hue-rotate(175deg) brightness(104%) contrast(92%);
+    filter: invert(100%) sepia(41%) saturate(1277%) hue-rotate(175deg)
+        brightness(104%) contrast(92%);
 }
 
-h1, h2, h3  {
+h1,
+h2,
+h3 {
     font-family: "Laila", serif;
     font-variant: small-caps;
 }
 
-h4, h5, h6, .btn {
+h4,
+h5,
+h6 {
     font-family: "Laila", serif !important;
+    font-weight: 900;
 }
 
-#nav-header, #footer {
+.btn-primary {
+    font-family: "Montserrat", sans-serif !important;
+    font-variant: small-caps !important;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #51b1d7 !important;
+}
+
+.btn-secondary {
+    font-variant: small-caps !important;
+    border: 1px solid #51b1d7 !important;
+    background-color: #eff5f6 !important;
+    color: #51b1d7 !important;
+}
+
+.btn-primary:hover {
+    background-image: linear-gradient(
+        to right,
+        #eff5f6 0%,
+        #dbd4cc 50%,
+        #51b1d7 100%
+    );
+}
+.btn-secondary:hover {
+    background-image: linear-gradient(
+        to right,
+        #eff5f6 0%,
+        #dbd4cc 50%,
+        #51b1d7 100%
+    );
+}
+
+#nav-header,
+#footer {
     padding: 1.5rem 2rem;
-    background-color:  #081846 !important;
-    color:  #EFF5F6 !important;
+    background-color: #081846 !important;
+    color: #eff5f6 !important;
 }
 
 .nav-link {
     font-family: "Laila", serif;
-    color:  #EFF5F6 !important;
+    color: #eff5f6 !important;
 }
 
 body {
     font-family: "Montserrat", sans-serif !important;
-    background-color: #EFF5F6 !important;
+    background-color: #eff5f6 !important;
     color: #081846 !important;
 }
 
 #jumbotron {
-      background-color:  #081846 !important;
-      width: 100%;
-      color:  #EFF5F6;
+    background-color: #081846 !important;
+    width: 100%;
+    color: #eff5f6;
 }
 
 #title {
@@ -45,8 +84,15 @@ body {
     letter-spacing: -4px;
 }
 
+.card {
+    width: 16rem !important;
+    background-color: #eff5f6 !important;
+    border-color: #cfd3df !important;
+    box-shadow: rgba(112, 149, 181, 0.35) 0px 5px 15px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
 
-
-
-
-
+.card:hover {
+    box-shadow: rgba(81, 177, 215, 0.65) 0px 15px 30px;
+    translate: 0 -10px;
+}
