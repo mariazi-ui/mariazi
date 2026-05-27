@@ -9,22 +9,20 @@
     <title>Home</title>
 </head>
 <body class="d-flex flex-column min-vh-100 m-0">
-    <header class="navbar navbar-expand-sm sticky-top" id="nav-header">
+    <header class="navbar navbar-expand-sm sticky-top" id="navHeader">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="logo_design_marita.svg" alt="Marita Aziga's Logo" class="logo">
+                <img src="logo_design_marita.svg" alt="Marita Aziga's Logo" id="logo">
             </a>
             <ul class="navbar-nav me-2 mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    <a class="nav-link active" aria-current="page" href="#about" id="aboutLink">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#projects">
-                        Projects
-                    </a>
+                    <a class="nav-link active" aria-current="page" href="#projects" id="projectsLink">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" role="button" href="#contact">Contact</a>
+                    <a class="nav-link active" aria-current="page" role="button" href="#contact" id="contactLink">Contact</a>
                 </li>                
             </ul>
         </div>
@@ -33,16 +31,13 @@
     <main class="flex-grow-1">
         <!-- Welcome -->
         <section class="container-fluid p-lg-5" id="jumbotron">
-            <div class="container py-5">
-                <h3 class="pb-1">Hi! My name is</h3>
-                <h1 id="title" class="pb-3">Marita Aziga</h1>
-                <p>I'm a front-end developer with a background in graphic design. I am dedicated to building responsive web applications, while making them look stylish.</p>
-                <p>If you'd like to learn more,</p>
-                <a class="btn btn-primary" role="button" href="#about">Click Here!</a>
+            <div class="container py-5" id="jumbotron-text">
+                <h1 id="title" class="pt-5 pb-2">Hi! I'm Marita.</h1>
+                <h4>I am dedicated to building responsive web applications that are engaging, user-centric and stylish.</h4>
             </div>
         </section>
         <!-- About Me-->
-        <section id="about" class="container p-lg-5">
+        <section id="about" class="container-fluid p-lg-5 info">
             <div class="container py-5">
                 <h1 class="py-3">About Me!</h1>
                 <p>
@@ -123,7 +118,7 @@
                 </div>
         </section>
         <!-- Projects -->
-        <section id="projects" class="container p-lg-5">
+        <section id="projects" class="container-fluid p-lg-5 info">
             <div class="container py-5">
                 <h1 class="py-3">Projects</h1>
                 <di class="container py-5">
@@ -188,13 +183,17 @@
             </div>
         </section>
         <!-- Contact Me! -->
-        <section id="contact" class="container p-lg-5">
+        <section id="contact" class="container-fluid p-lg-5 info">
             <div class="container py-5">
                 <h1 class="py-3">Want to get in touch?</h1>
                 <p>Check out my social media or leave a message at azigamarita@gmail.com. I'll get back to you soon.</p>
-                <div class="list-group list-group-flush">
-                    <a href="https://github.com/mariazi-ui" target="_blank" class="list-group-item">GitHub</a>
-                    <a href="https://www.linkedin.com/in/maritaaziga/" target="_blank" class="list-group-item">LinkedIn</a>
+                <div id="linkGroup" class="py-lg-5">
+                    <a href="https://github.com/mariazi-ui" target="_blank">
+                        <?xml version="1.0" encoding="UTF-8"?><svg width="50px" height="50px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.3333 19V17.137C14.3583 16.8275 14.3154 16.5163 14.2073 16.2242C14.0993 15.9321 13.9286 15.6657 13.7067 15.4428C15.8 15.2156 18 14.4431 18 10.8989C17.9998 9.99256 17.6418 9.12101 17 8.46461C17.3039 7.67171 17.2824 6.79528 16.94 6.01739C16.94 6.01739 16.1533 5.7902 14.3333 6.97811C12.8053 6.57488 11.1947 6.57488 9.66666 6.97811C7.84666 5.7902 7.05999 6.01739 7.05999 6.01739C6.71757 6.79528 6.69609 7.67171 6.99999 8.46461C6.35341 9.12588 5.99501 10.0053 5.99999 10.9183C5.99999 14.4366 8.19999 15.2091 10.2933 15.4622C10.074 15.6829 9.90483 15.9461 9.79686 16.2347C9.68889 16.5232 9.64453 16.8306 9.66666 17.137V19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.66667 17.7018C7.66667 18.3335 6 17.7018 5 15.7544" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/maritaaziga/" target="_blank">
+                        <?xml version="1.0" encoding="UTF-8"?><svg width="50px" height="50px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 17V13.5V10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 17V13.75M11 10V13.75M11 13.75C11 10 17 10 17 13.75V17" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 7.01L7.01 6.99889" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </a>
                 </div>
         </section>
    </main>

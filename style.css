@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Niconne&display=swap");
 
-.logo {
+#logo {
     width: 30px;
     height: auto;
     filter: invert(100%) sepia(41%) saturate(1277%) hue-rotate(175deg)
@@ -36,18 +36,38 @@ h6 {
     border-radius: 18px !important;
 }
 
-.btn-primary:hover {
-
-}
-.btn-secondary:hover {
-    color: #eff5f6 !important;
-}
-
-#nav-header,
+#navHeader,
 #footer {
     padding: 1rem 1.5rem;
-    background-color: #081846 !important;
+    color: #081846 !important;
+
+}
+
+#navHeader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    transition: all 0.2s ease;
+    z-index: 1000;
     color: #eff5f6 !important;
+
+}
+#navHeader.scrolled {
+    background: rgba(239, 245, 246, 1);
+    color: #081846 !important;
+}
+
+
+
+#logo.scrolled {
+    filter: brightness(0) saturate(100%) invert(8%) sepia(66%) saturate(2714%) hue-rotate(214deg) brightness(89%) contrast(100%);
+} 
+
+#aboutLink.scrolled, 
+#projectsLink.scrolled, 
+#contactLink.scrolled {
+    color: #081846 !important;
 }
 
 .nav-link {
@@ -55,16 +75,92 @@ h6 {
     color: #eff5f6 !important;
 }
 
+#footer .nav-link {
+    color: #081846 !important;
+
+}
+
+.nav-link:hover, #footer .nav-link:hover{
+    color: #F277B8 !important;
+}
+
+#aboutLink.scrolled, 
+#projectsLink.scrolled, 
+#contactLink.scrolled {
+    color: #081846 !important;
+}
+
+#aboutLink.scrolled:hover, 
+#projectsLink.scrolled:hover, 
+#contactLink.scrolled:hover {
+    color: #F277B8 !important;
+}
+
 body {
     font-family: "Montserrat", sans-serif !important;
-    background-color: #eff5f6 !important;
+    background: linear-gradient(
+        -45deg,
+        #EFF5F6,
+        #DBD4CC,
+        #51B1D7,
+        #3A7FC2,
+        #2B4F8B,
+        #081846
+    );
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
     color: #081846 !important;
 }
 
 #jumbotron {
-    background-color: #081846 !important;
+    position: relative;
+    text-align: center;
     width: 100%;
     color: #eff5f6;
+    height: 700px;
+}
+
+.info {
+    background-color: #eff5f6;
+    width: 100vw;
+}
+
+#jumbotron::after {
+    content: "";
+       position: absolute;
+       inset: 0;
+       background: linear-gradient(
+           to top,
+           rgba(239, 245, 246, 1) 0%,
+           rgba(239, 245, 246, 0) 90%
+       );
+}
+
+#footer {
+    background-color: #eff5f6;
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    25% {
+      background-position: 50% 100%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 50% 0%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+#jumbotron-text {
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 #title {
@@ -72,8 +168,12 @@ body {
     font-size: 100px;
     font-variant: unset;
     letter-spacing: -4px;
+    color: #eff5f6;
 }
 
+section {
+    width: 100%;
+}
 .card {
     width: 16rem !important;
     background-color: #eff5f6 !important;
@@ -85,4 +185,10 @@ body {
 .card:hover {
     box-shadow: rgba(81, 177, 215, 0.65) 0px 15px 30px;
     translate: 0 -10px;
+}
+
+#linkGroup {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
