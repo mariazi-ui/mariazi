@@ -9,7 +9,6 @@
     --muted-color: #7095b5;
     --success-color: #3EB6CF;
     --error-color: #FF7565;
-    --accent-color: #F277B8;
 }
 
 * {
@@ -23,35 +22,102 @@
         brightness(104%) contrast(92%);
 }
 
+#jumbotron, #title {
+    font-size: 96px !important;
+}
+
+
+
 h1,
 h2,
 h3 {
     font-family: "Laila", serif;
-    font-weight: medium;
+    font-weight: 800;
     letter-spacing: -3px;
+}
+
+#jumbotron h5 {
+    color: var(--text-2-color) !important;
 }
 
 h4,
 h5,
 h6 {
-    font-family: "Laila", serif !important;
+    font-family: "Alan Sans", sans-serif !important;
     letter-spacing: -1px;
 }
 
+label {
+    font-family: "Laila", serif;
+    color: var(--text-2-color);
+}
+
+hr {
+    border: 2px solid var(--primary-color) !important;
+    border-radius: 5px !important;
+    width: 20% !important;
+}
+
+p, ul li {
+    font-family: "Alan Sans", sans-serif;
+    font-size: 14px;
+    color: var(--text-2-color);
+}
+
+#display {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+h2 , .section-title {
+    font-size: 64px !important;
+}
+
+h3 {
+    font-size: 48px !important;
+}
+
+h4 {
+    font-size: 36px !important;
+}
+
+h5 {
+    font-size: 32px !important;
+}
+
+h6 {
+    font-size: 24px !important;
+}
 
 .btn-primary {
-    font-variant: small-caps !important;
-    font-weight: bold;
+    font-weight: 600;
     cursor: pointer;
-    border: 1px solid #51B1D7 !important; /*change lines 42 & 43*/
-    background-color: #2B4F8B !important;
+    border: 1px solid var(--surface-color) !important; /*change lines 42 & 43*/
+    background-color: var(--surface-color) !important;
+    color: var(--text-1-color);
     border-radius: 13px !important;
+    padding: 12px 20px;
+}
+
+.btn-primary:hover {
+    border: 1px solid var(--primary-color) !important; /*change lines 42 & 43*/
+    background-color: var(--primary-color) !important;
 }
 
 .btn-secondary {
+    font-weight: 600;
     font-variant: small-caps !important;
     cursor: pointer;
     border-radius: 13px !important;
+    padding: 12px 20px;
+    background-color: transparent;
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+    border-color: 1px solid var(--secondary-color) !important;
+    color: var(--text-1-color) !important;
 }
 
 #navHeader,
@@ -79,10 +145,16 @@ h6 {
         brightness(104%) contrast(92%);
 } 
 
-#aboutLink.scrolled, 
-#projectsLink.scrolled, 
-#contactLink.scrolled {
+#aboutLink, 
+#projectsLink, 
+#contactLink {
    color: var(--text-1-color) !important; 
+}
+
+#aboutLink:hover, 
+#projectsLink:hover, 
+#contactLink:hover {
+   color: var(--text-2-color) !important; 
 }
 
 .nav-link {
@@ -92,7 +164,7 @@ h6 {
 
 
 .nav-link:hover, #footer .nav-link:hover{
-    color: var(--accent-color);
+    color: var(--text-2-color) !important;
 }
 
 #aboutLink.scrolled, 
@@ -104,17 +176,15 @@ h6 {
 #aboutLink.scrolled:hover, 
 #projectsLink.scrolled:hover, 
 #contactLink.scrolled:hover {
-    color: var(--text-1-color);
+    color: var(--text-2-color) !important;
 }
 
 body {
-    font-family: "Montserrat", sans-serif !important;
     background: linear-gradient(
         -45deg,
-        var(--text-1-color),
-        var(--text-2-color),
         var(--primary-color),
         var(--secondary-color),
+        var(--surface-color),
         var(--background-color)
     );
     background-size: 400% 400%;
@@ -134,14 +204,14 @@ body {
     width: 100vw;
 }
 
-#jumbotron::after {
+#jumbotron::before {
     content: "";
        position: absolute;
        inset: 0;
        background: linear-gradient(
            to top,
-           rgba(8, 24, 70, 1) 0%,
-           rgba(8, 24, 70, 0) 75%
+           rgba(8, 24, 70, 1) 10%,
+           rgba(8, 24, 70, 0) 65%
        );
 }
 
@@ -182,15 +252,41 @@ section {
     width: 100%;
 }
 .card {
-    width: 16rem !important;
-
-    box-shadow: rgba(112, 149, 181, 0.35) 0px 5px 15px;
-    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    width: 15rem !important;
+    background: radial-gradient(
+        circle at top left,
+        var(--surface-color) 60%,
+        var(--secondary-color) 150%
+    );    
+    box-shadow: rgba(43, 79, 139, 0.8) 0 3px 5px;
+    transition:
+        transform 0.4s cubic-bezier(0.23, 1, 0.32, 1),
+        box-shadow 0.4s cubic-bezier(0.23, 1, 0.32, 1),
+        background 0.4s ease;
+    color: var(--text-1-color) !important;
+    overflow: hidden;
+    margin: 14px;
 }
 
 .card:hover {
+    background: radial-gradient(
+        circle at top left,
+        var(--secondary-color) 0%,
+        var(--primary-color) 100%
+    );    
     box-shadow: rgba(81, 177, 215, 0.65) 0px 15px 30px;
-    translate: 0 -10px;
+    transform: translateY(-2px);
+}
+
+.card-footer {
+    border-top: none;
+    background: var(--secondary-color);
+    transition: background .35s ease;
+    text-align: right;
+}
+
+.card:hover .card-footer {
+    background: var(--primary-color);
 }
 
 #linkGroup {
